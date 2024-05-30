@@ -1,0 +1,35 @@
+# 1
+
+# A Entry is used to take user's input.
+# A Label is used to display text or an image.
+# A Button is a graphical control element??? (I researched it and it just something you can interact with)
+# A OptionMenu is used to create a drop-down menu in the application???
+# A Grid layout uses the concepts of rows and columns to arrange the widgets.
+# A Command parameter in Button widget is used to find the command that the button will activate on.
+
+#2
+
+import tkinter as tk
+
+tk = tk.Tk()
+ tk.title("Color change")
+
+#3
+
+colour = ("Red","Blue","Yellow","Green")
+color = StringVar(colour)
+colors = tk.OptionMenu(color, colour)
+
+def change_color():
+  bg.config(color)
+#4
+ #???
+#5
+
+color.trace(change_color())
+
+#6
+mainloop()
+
+
+
